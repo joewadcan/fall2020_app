@@ -2,8 +2,9 @@ require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get static_pages_home_url
+    get '/'
     assert_response :success
+    # This should be broken! use '/' for root
   end
 
   test "should get help" do
